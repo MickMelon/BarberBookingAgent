@@ -6,6 +6,8 @@ The Barber Booking Agent is an R&D project to investigate and explore Semantic K
 
 It provides a chat-based functionality to allow a user to book an appointment with a barber.
 
+![image](https://github.com/MickMelon/BarberBookingAgent/assets/21023513/b197c495-d20c-4835-acde-c0252f20034e)
+
 ## Getting Started
 
 Clone the repository:
