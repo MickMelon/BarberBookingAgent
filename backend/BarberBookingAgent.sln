@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberBookingAgent.WebApi", "BarberBookingAgent.WebApi\BarberBookingAgent.WebApi.csproj", "{55F6C5FF-47A3-467D-821D-0AA4BE5225C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarberBookingAgent.WebApi", "BarberBookingAgent.WebApi\BarberBookingAgent.WebApi.csproj", "{55F6C5FF-47A3-467D-821D-0AA4BE5225C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberBookingAgent.Core", "BarberBookingAgent.Core\BarberBookingAgent.Core.csproj", "{8F88B48C-6B34-49E7-A798-4BA36B64C484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberBookingAgent.Application", "BarberBookingAgent.Application\BarberBookingAgent.Application.csproj", "{6C3522DF-52FA-4987-9978-E9AC7203728B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberBookingAgent.Infrastructure", "BarberBookingAgent.Infrastructure\BarberBookingAgent.Infrastructure.csproj", "{4E8BFFAE-D55C-4666-943B-40E77915159A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{55F6C5FF-47A3-467D-821D-0AA4BE5225C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55F6C5FF-47A3-467D-821D-0AA4BE5225C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55F6C5FF-47A3-467D-821D-0AA4BE5225C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F88B48C-6B34-49E7-A798-4BA36B64C484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F88B48C-6B34-49E7-A798-4BA36B64C484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F88B48C-6B34-49E7-A798-4BA36B64C484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F88B48C-6B34-49E7-A798-4BA36B64C484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3522DF-52FA-4987-9978-E9AC7203728B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3522DF-52FA-4987-9978-E9AC7203728B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3522DF-52FA-4987-9978-E9AC7203728B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3522DF-52FA-4987-9978-E9AC7203728B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8BFFAE-D55C-4666-943B-40E77915159A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8BFFAE-D55C-4666-943B-40E77915159A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8BFFAE-D55C-4666-943B-40E77915159A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8BFFAE-D55C-4666-943B-40E77915159A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

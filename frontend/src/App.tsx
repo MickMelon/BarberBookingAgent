@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import "./index.css";
+import { useState } from "react";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
   MainContainer,
@@ -15,8 +16,10 @@ type ChatMessageContent = {
 
 function App() {
   const [chatHistory, setChatHistory] = useState<ChatMessageContent[]>([]);
+  const [isSending, setIsSending] = useState(false);
 
   const handleSend = async (value: string) => {
+    setIsSending(true);
     setChatHistory([...chatHistory, { message: value, role: "user" }]);
 
     const response = await fetch("https://localhost:7285/api/Chat/message", {
@@ -28,6 +31,7 @@ function App() {
     });
 
     if (!response.ok) {
+      setIsSending(false);
       throw new Error("Network response was not ok");
     }
 
@@ -38,10 +42,12 @@ function App() {
       { message: value, role: "user" },
       { message: content.message, role: "assistant" },
     ]);
+    setIsSending(false);
   };
 
   return (
-    <div style={{ position: "relative", maxHeight: "100%" }}>
+    <div className="px-8 pt-4">
+      <h1 className="text-3xl pb-2">Barber Booking Agent</h1>
       <MainContainer>
         <ChatContainer>
           <MessageList>
@@ -57,6 +63,7 @@ function App() {
                 }}
               />
             ))}
+            {isSending && <div>Typing...</div>}
           </MessageList>
           <MessageInput placeholder="Type message here" onSend={handleSend} />
         </ChatContainer>

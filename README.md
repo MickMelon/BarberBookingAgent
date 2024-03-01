@@ -32,7 +32,7 @@ Start the API via your IDE or command:
 dotnet run
 ```
 
-## Setting up the React.js Frontend
+### Setting up the React.js Frontend
 
 Navigate to the frontend application directory:
 

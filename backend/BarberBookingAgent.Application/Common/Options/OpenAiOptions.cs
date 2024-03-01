@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BarberBookingAgent.WebApi.Options;
+namespace BarberBookingAgent.Application.Common.Options;
 
 public record OpenAiOptions
 {
